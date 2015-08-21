@@ -54,6 +54,7 @@ Currently, the variables put into the Farm role will be Status & ID, where statu
 ### Installation
 Install via pip with:
 >pip install -r requirements.txt
+
 ### Confgiuration
 Open the config.ini where you cloned this repo and change the values for your Scalr API endpoint:
 ```
