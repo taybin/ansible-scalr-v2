@@ -2,7 +2,8 @@
 ### About
 This is a dyanmic Ansible inventory for Scalr.  Scalr objects are mapped out like Environment > Farm > Roles > Servers, and this dyanmic inventory will generate the roles based on Farm > Roles > Servers for example:
 
-```{
+```
+{
   "Ansible": {
     "hosts": [
       "192.168.110.132",
