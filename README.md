@@ -72,5 +72,6 @@ Ensure you change the following configuration values in config.ini:
 - SCALR_API_KEY
 - SCALR_SECRET_KEY
 - API_URL
+
 ### Running With Ansible
 >ansible-playbook -i scalrinventory.py --limit "LimitToRole"
