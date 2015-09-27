@@ -77,22 +77,22 @@ class ScalrInventory(object):
             # for array and handle.
             if isinstance(farm_detail, list):
                 for roles in farm_detail:
-                    farms[farm]['roles'][roles['Name']] = {}
-                    farms[farm]['roles'][roles['Name']]['servers'] = []
+                    farms[farm]['roles'][roles['Alias']] = {}
+                    farms[farm]['roles'][roles['Alias']]['servers'] = []
 
                     if isinstance(roles['ServerSet'], dict):
                         server_info = roles['ServerSet']['Item']
 
-                        farms[farm]['roles'][roles['Name']]['servers'] = self.parse_server_list(server_info)
+                        farms[farm]['roles'][roles['Alias']]['servers'] = self.parse_server_list(server_info)
 
             else:
-                farms[farm]['roles'][farm_detail['Name']] = {}
-                farms[farm]['roles'][farm_detail['Name']]['servers'] = []
+                farms[farm]['roles'][farm_detail['Alias']] = {}
+                farms[farm]['roles'][farm_detail['Alias']]['servers'] = []
 
                 if isinstance(farm_detail['ServerSet'], dict):
                     server_info = farm_detail['ServerSet']['Item']
 
-                    farms[farm]['roles'][farm_detail['Name']]['servers'] = self.parse_server_list(server_info)
+                    farms[farm]['roles'][farm_detail['Alias']]['servers'] = self.parse_server_list(server_info)
 
         return farms
 
