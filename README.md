@@ -74,4 +74,4 @@ Ensure you change the following configuration values in config.ini:
 - API_URL
 
 ### Running With Ansible
->ansible-playbook -i scalrinventory.py --limit "LimitToRole"
+>ansible-playbook -i ./inventory/ansible-scalr/inventory.py --limit "LimitToRole"
